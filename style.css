@@ -1,0 +1,481 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  font-display: swap;
+  font-family: 'Gotham';
+  font-weight: 300;
+  font-style: normal;
+  line-height: 17px;
+  letter-spacing: -0.5px;
+  scroll-snap-type: y mandatory;
+}
+ #first-page,#second-page,#third-page {
+  scroll-snap-align: start;
+ }
+
+
+
+@font-face {
+  font-family: "Gotham";
+  src: url(./GothamBook.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url(./fonts/GothamMedium.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url(./GothamBold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* utilaty class */
+
+
+
+.clr {
+  clear: both;
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+
+ /*first screen */
+
+ /* first-p-bg-img */
+.first-bg-img {
+  background: url('./img-first-page/index-background.jfif') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+/* logo- float to left */
+
+#logo {
+  float: left;
+  padding: 10px;
+  margin-left: 10px;
+  /* position: fixed; */
+  
+}
+
+
+/*top navbar */
+
+#navbar {
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  float: right;
+
+}
+
+
+
+#navbar ul {
+  list-style: none;
+
+}
+
+
+#navbar ul li {
+  float: left;
+ 
+}
+
+
+
+#navbar ul li a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  margin: 5px;
+}
+
+
+#navbar .nav-top-middel {
+  float: left;
+  margin-right:200px;
+ 
+}
+
+
+#navbar .nav-top-right1 {
+  float:right;
+   
+}
+/* main content */
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: #ffffff;
+  font-size: 40px;
+  
+}
+
+/* side nav bar */
+
+#sidenav {
+  position: fixed;
+  margin-top: 5%;
+  z-index: 10;
+}
+
+#sidenav ul {
+  list-style: none; 
+}
+
+
+#sidenav ul li a {
+  
+ padding-left: 5px;
+  width: 60px;
+  height: 23px;
+  text-align: left;
+  line-height: 21px;
+  font-size: 14px;
+  text-decoration: none;
+  color:transparent;
+  font-family: "Gotham";
+  src: url(../fonts/GothamMedium.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  border-left:1px solid #6C7074;
+  margin: 15px;
+ 
+
+}
+
+#sidenav ul li a:hover {
+  background:transparent;
+  color:#ffffff;
+  
+}
+  
+
+
+#sidenav ul li a.current {
+  background:transparent;
+  border-left: 2px solid #ffffff;
+
+}
+
+
+/* footer */
+.container{
+  width:700px;
+  height: 66px;
+  margin:400px auto;
+}
+
+.box {
+  float: left;
+  width: 25%;
+  height: 60px;
+  text-align: center;
+ 
+}
+
+#box1,#box2 {
+border-right: 1px #fff solid;
+}
+
+.box h2,p {
+  color: #fff;
+}
+
+.box h2 {
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+
+.speedometer {
+  height:25px;
+  fill: #fff;
+  width: 40px;
+ margin-right: 4px;
+}
+
+.h2header {
+  font-size:28px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #fff;
+  font-weight: 700;
+ width: 64px;
+}
+
+.btn {
+border: 3px #ffffff solid;
+padding: 10px 40px;
+text-align: center;
+border-radius:25px;
+background:transparent;
+color: #ffffff;
+margin-top: 10px;
+
+
+}
+.btn:hover {
+  background: #fff;
+  color: #333;
+}
+
+
+/* .speedometer__inner-circle {
+ 
+  opacity: 20%;
+  margin: 0;
+
+}*/
+
+
+
+.svg-relative {
+
+  position: relative;
+}
+
+
+.svg-absalut{
+  position: absolute;
+  top:0;
+  left:0;
+}
+.speedometer__needle {
+  fill:#fff;
+  width:4px;
+  height: 16px;
+} 
+
+
+
+
+
+ /* second screen */
+
+ /* second-p-bg-img */
+ .second-bg-img {
+  height: 100vh;
+  background: url('./img-first-page/model_3_safety_hero.png')no-repeat center center;
+  background-size:cover;
+  background-position:100% 60%;
+  position: relative;
+  width:70%;
+  float: right;
+}
+
+#aside-content {
+  width:30%;
+  height: 100vh;
+  float: left;
+}
+ 
+
+#logo-second-page {
+  width: 144px;
+  height: 50px;
+  padding: 15px 20px;
+  display: inline-block;
+}
+
+
+
+#main-aside-content {
+ margin-left: 50px;
+ margin-top: 16px;
+ 
+}
+
+.two-heders h3 {
+font-size: 17px;
+font-family: "Gotham";
+font-weight: 300;
+font-style: normal;
+color:#171a20;
+text-align: start;
+}
+
+.two-heders  h1 {
+  font-size: 28px;
+  line-height: 36px;
+  text-align: start;
+  font-family: "Gotham";
+  font-weight: 400;
+  font-style: normal;
+  color:#171a20;
+  margin:-2px;
+}
+
+#first-container p {
+  width: 315px;
+  height: 171px;
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+  margin-top: 20px;
+  font-family: "Gotham";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: start;
+  color: #393c41;
+}
+
+#seconde-container {
+  width: 315px;
+  height: 297px;
+  background-color: #EEEEEE;
+  border-radius: 20px;
+  font-family: "Gotham";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+}
+.plus-btn {
+  display: inline-block;
+}
+
+.btn-black {
+  display: inline-block;
+}
+
+
+
+
+/* third screen */
+#main-container {
+height: 70vh;
+width: 100vw;
+position: relative;
+
+}
+
+#bottom-container {
+  height: 26vh;
+  width: 100vw;
+}
+
+.third-bg-img{ 
+background: url('./img-first-page/lhd-performance-hero-desktop.jfif')no-repeat center center/cover;
+height:70vh;
+width: 100vw;
+/* position: relative; */
+  
+}
+
+
+.box-container{
+  margin-top: 350px;
+  margin-left: 100px;
+ 
+}
+
+
+
+#box-1,#box-2 {
+border-right: 1px #fff solid;
+}
+
+ #box-2 h2 {
+  text-align: left;
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Gotham";
+  margin-left: 15px;
+}
+
+#box-3 h2 {
+  text-align: left;
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Gotham";
+  margin-left: 15px;
+}
+
+#box-1,#box-2,#box-3 p {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Gotham";
+  font-weight: 300;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.bunner-box {
+ width:35vw;
+ height: 100vh;
+ float: left;
+}
+.bunner-box-right {
+  width: 60vw;
+  float: right;
+}
+
+.left-content h2 {
+  text-align: left;
+  font-size: 17px;
+}
+
+.left-content h1 {
+  color: #171a20;
+  font-size: 28px;
+  text-align: left;
+  margin:2px;
+
+}
+
+.right-content p {
+  color: #171a20;
+  font-size: 14px;
+  display: inline;
+}
+
+button #black-btn {
+color: #171a20;
+border: 3px #171a20 solid;
+padding: 10px 40px;
+text-align: center;
+border-radius:25px;
+background:transparentbl;
+margin-top: 10px;
+
+}
+
+ button #black-plus-btn {
+  border: 3px #171a20 solid;
+  padding: 10px 40px;
+  text-align: center;
+  border-radius:50%;
+  background:transparentbl;
+  margin-top: 10px;
+   
+}
+
+
+
+
+
+
